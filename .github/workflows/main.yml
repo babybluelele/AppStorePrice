@@ -18,6 +18,12 @@ jobs:
         with:
           node-version: '14'
           
+      - name: 4. 安装插件
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: |
+          export TZ='Asia/Shanghai'
+          yarn install  
+          
       - name: Install Dependency       
         run: |
           npm install
