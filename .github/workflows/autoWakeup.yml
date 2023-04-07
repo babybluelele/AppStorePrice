@@ -21,9 +21,12 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-
+      #- name: Checkout
+       # uses: actions/checkout@master
+     - name: Checkout code
+       uses: actions/checkout@v3
+       
+       
       # from: https://github.com/actions/setup-node
       - name: 设置Node.js
         uses: actions/setup-node@master
