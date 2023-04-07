@@ -47,7 +47,7 @@ jobs:
 
       - name: Waking #读取站点信息
         run: |
-          node ./src/index.js ${{secrets.SCKEY}}
+          node ./src/utils.js ${{secrets.SCKEY}}
 
       - name: Commit #更新日志到GitHub仓库
         run: |
