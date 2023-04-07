@@ -31,4 +31,4 @@ jobs:
           npm install got
           npm install xmlhttprequest
           npm install tough-cookie         
-          node ./utils.js  # 要运行的js脚本，放在根目录下
+          node ./src/utils.js  # 要运行的js脚本，放在根目录下
